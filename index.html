@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora -->
 <html lang="tr">
 <head>
 <meta charset="utf-8">
@@ -12,29 +11,42 @@
 <meta property="og:url" content="https://avenoradis.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
-<meta name="author" content="Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dentist", "name": "Avenora Dental", "url": "https://avenoradis.com/", "sameAs": ["https://www.instagram.com/avenoradental/"], "openingHours": "Mo-Sa", "dateModified": "2026-11-13"}</script>
 <style>:root{--zemin:#F7F5F1;--kart:#FFFFFF;--yazi:#1E2430;--soluk:#5A6170;--vurgu:#2F5D62;--vurgu-koyu:#1F4246;--cizgi:#E4DFD6}
 @media (prefers-color-scheme:dark){:root{--zemin:#14181F;--kart:#1C222B;--yazi:#ECEEF2;--soluk:#A9B0BC;--vurgu:#7FB3B8;--vurgu-koyu:#A7CDD1;--cizgi:#2B323D}}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--zemin);color:var(--yazi);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
-.sar{max-width:960px;margin:0 auto;padding:0 20px}
+img,video{display:block;max-width:100%;height:auto}
+.sar{max-width:1080px;margin:0 auto;padding:0 20px}
 header{padding:22px 0;border-bottom:1px solid var(--cizgi)}
 .logo{font-size:1.15rem;font-weight:700;letter-spacing:.02em;color:var(--vurgu-koyu)}
-.ust{padding:56px 0 40px}
+.ust{padding:44px 0 36px}
+.ust-izgara{display:grid;gap:28px;align-items:center}
+@media (min-width:900px){.ust-izgara{grid-template-columns:1fr 1fr;gap:44px}}
 h1{font-size:clamp(2rem,6vw,3rem);line-height:1.15;margin-bottom:10px}
 .alt{font-size:1.15rem;color:var(--soluk);margin-bottom:18px}
-.giris{max-width:640px;margin-bottom:28px}
+.giris{max-width:640px}
+.ust-medya{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:16/9;background:var(--cizgi)}
+.ust-medya img,.ust-medya video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ust-medya video{opacity:0;transition:opacity .6s}.ust-medya video.oynuyor{opacity:1}
+.ek{list-style:none;margin:34px 0 0;display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:640px){.ek{grid-template-columns:1fr 1fr}}
+.ek li{display:flex;gap:14px;align-items:center;background:var(--kart);border:1px solid var(--cizgi);border-radius:14px;padding:10px}
+.ek img{width:96px;height:72px;object-fit:cover;border-radius:10px;flex:none}
+section.tedavi{padding:24px 0 48px}
+h2{font-size:1.5rem;margin-bottom:18px}
+.kartlar{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.kartlar li{background:var(--kart);border:1px solid var(--cizgi);border-radius:14px;overflow:hidden}
+.kartlar img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.kartlar .metin{padding:16px 18px 18px}
+.kartlar h3{font-size:1.05rem;margin-bottom:6px}.kartlar p{color:var(--soluk);font-size:.97rem}
+.galeri{padding:0 0 28px}
+.serit{list-style:none;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+.serit li{scroll-snap-align:start}.serit img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}
+.eylem{padding:8px 0 52px}
 .cta{display:inline-block;background:var(--vurgu);color:#fff;text-decoration:none;font-weight:600;padding:14px 26px;border-radius:999px}
 .cta:hover,.cta:focus-visible{background:var(--vurgu-koyu)}
 @media (prefers-color-scheme:dark){.cta{color:#10161C}}
-.ek{list-style:none;margin:34px 0 0;display:grid;gap:10px;max-width:640px}
-.ek li{padding-left:18px;position:relative}.ek li::before{content:"";position:absolute;left:0;top:.7em;width:7px;height:7px;border-radius:50%;background:var(--vurgu)}
-section.tedavi{padding:24px 0 56px}
-h2{font-size:1.5rem;margin-bottom:18px}
-.kartlar{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-.kartlar li{background:var(--kart);border:1px solid var(--cizgi);border-radius:14px;padding:18px}
-.kartlar h3{font-size:1.05rem;margin-bottom:6px}.kartlar p{color:var(--soluk);font-size:.97rem}
 footer{border-top:1px solid var(--cizgi);padding:26px 0 40px;color:var(--soluk);font-size:.9rem}
 footer p+p{margin-top:6px}</style>
 </head>
@@ -42,36 +54,53 @@ footer p+p{margin-top:6px}</style>
 <header><div class="sar"><div class="logo">Avenora Dental</div></div></header>
 <main>
   <section class="ust"><div class="sar">
+  <div class="ust-izgara">
+    <div>
     <h1>Avenora Dental</h1>
     <p class="alt">Ağız ve diş sağlığında size özel tedavi planı</p>
     <p class="giris">Avenora Dental'de tedavi planı, klinikte yapılan muayene sonrasında size özel olarak hazırlanır. Tedavi seçenekleri ve süreç, hekiminizle birlikte konuşulur.</p>
-    <a class="cta" href="https://www.instagram.com/avenoradental/" target="_blank" rel="noopener">Instagram'da bizi takip edin</a>
+    </div>
+    <div class="ust-medya"><img src="gorsel/giris-poster-1280.webp" srcset="gorsel/giris-poster-640.webp 640w, gorsel/giris-poster-1280.webp 1280w" sizes="(min-width:900px) 520px, 100vw" width="1280" height="720" alt="Diş koltuğunda el aynasına bakıp gülümseyen kıvırcık saçlı kadın" fetchpriority="high"><video muted loop playsinline preload="none" aria-hidden="true" width="1280" height="720" data-src="gorsel/giris-video.mp4"></video></div>
+  </div>
     <ul class="ek">
-      <li>Zirkonyum, lamine ve gülüş tasarımı restorasyonları klinik laboratuvarımızda hazırlanır.</li>
-      <li>Panoramik röntgen klinikte çekilir.</li>
-      <li>Renk seçimine hasta, hekim ve teknisyen birlikte bakar.</li>
-      <li>Pazartesi-Cumartesi açığız.</li>
+      <li><img src="gorsel/ek-laboratuvar-480.webp" srcset="gorsel/ek-laboratuvar-240.webp 240w, gorsel/ek-laboratuvar-480.webp 480w" sizes="96px" width="480" height="360" alt="Laboratuvarda eldivenli ellerle bir diş protezinin parlatılması" loading="lazy" decoding="async"><span>Zirkonyum, lamine ve gülüş tasarımı restorasyonları klinik laboratuvarımızda hazırlanır.</span></li>
+      <li><img src="gorsel/ek-panoramik-480.webp" srcset="gorsel/ek-panoramik-240.webp 240w, gorsel/ek-panoramik-480.webp 480w" sizes="96px" width="480" height="360" alt="Panoramik röntgen cihazında çekim için konumlanmış hasta" loading="lazy" decoding="async"><span>Panoramik röntgen klinikte çekilir.</span></li>
+      <li><img src="gorsel/ek-renk-480.webp" srcset="gorsel/ek-renk-240.webp 240w, gorsel/ek-renk-480.webp 480w" sizes="96px" width="480" height="360" alt="Eldivenli ellerde tutulan diş renk skalası" loading="lazy" decoding="async"><span>Renk seçimine hasta, hekim ve teknisyen birlikte bakar.</span></li>
+      <li><img src="gorsel/ek-takvim-480.webp" srcset="gorsel/ek-takvim-240.webp 240w, gorsel/ek-takvim-480.webp 480w" sizes="96px" width="480" height="360" alt="Klinik resepsiyonunda randevu defteri üzerinden konuşan iki kişi" loading="lazy" decoding="async"><span>Pazartesi-Cumartesi açığız.</span></li>
     </ul>
   </div></section>
   <section class="tedavi"><div class="sar">
     <h2>Tedavilerimiz</h2>
     <ul class="kartlar">
-      <li><h3>İmplant</h3><p>Eksik dişlerin yerine, çene kemiğine yerleştirilen yapay kök üzerine yapılan sabit diş.</p></li>
-      <li><h3>Zirkonyum kaplama</h3><p>Doğal diş görünümüne yakın, metal desteksiz kaplama ve köprüler.</p></li>
-      <li><h3>Lamine (porselen yaprak)</h3><p>Dişlerin ön yüzüne yapıştırılan ince porselen yapraklar.</p></li>
-      <li><h3>Gülüş tasarımı</h3><p>Diş biçimi, rengi ve diziliminin yüz oranlarıyla birlikte planlanması.</p></li>
-      <li><h3>Diş beyazlatma</h3><p>Diş renginin hekim kontrolünde açılması.</p></li>
-      <li><h3>Ortodonti ve şeffaf plak</h3><p>Çapraşık dişlerin tel ya da şeffaf plaklarla düzeltilmesi.</p></li>
-      <li><h3>Çocuk diş tedavisi</h3><p>Süt ve kalıcı dişlerin korunmasına yönelik muayene ve tedaviler.</p></li>
-      <li><h3>Kanal tedavisi</h3><p>Zarar görmüş diş sinirinin temizlenerek dişin korunması.</p></li>
-      <li><h3>Diş taşı temizliği</h3><p>Diş yüzeyinde biriken taş ve plağın temizlenmesi.</p></li>
+      <li><img src="gorsel/tedavi-implant-800.webp" srcset="gorsel/tedavi-implant-480.webp 480w, gorsel/tedavi-implant-800.webp 800w" sizes="(min-width:900px) 340px, (min-width:600px) 50vw, 100vw" width="800" height="533" alt="Yapay kök üzerine yerleştirilmiş dişi gösteren implant maketi" loading="lazy" decoding="async"><div class="metin"><h3>İmplant</h3><p>Eksik dişlerin yerine, çene kemiğine yerleştirilen yapay kök üzerine yapılan sabit diş.</p></div></li>
+      <li><img src="gorsel/tedavi-zirkonyum-800.webp" srcset="gorsel/tedavi-zirkonyum-480.webp 480w, gorsel/tedavi-zirkonyum-800.webp 800w" sizes="(min-width:900px) 340px, (min-width:600px) 50vw, 100vw" width="800" height="533" alt="Laboratuvarda eldivenli ellerin küçük bir diş restorasyonunu işlemesi" loading="lazy" decoding="async"><div class="metin"><h3>Zirkonyum kaplama</h3><p>Doğal diş görünümüne yakın, metal desteksiz kaplama ve köprüler.</p></div></li>
+      <li><img src="gorsel/tedavi-lamine-800.webp" srcset="gorsel/tedavi-lamine-480.webp 480w, gorsel/tedavi-lamine-800.webp 800w" sizes="(min-width:900px) 340px, (min-width:600px) 50vw, 100vw" width="800" height="533" alt="Diş koltuğunda el aynasına bakarak gülümseyen kadın hasta" loading="lazy" decoding="async"><div class="metin"><h3>Lamine (porselen yaprak)</h3><p>Dişlerin ön yüzüne yapıştırılan ince porselen yapraklar.</p></div></li>
+      <li><img src="gorsel/tedavi-gulus-800.webp" srcset="gorsel/tedavi-gulus-480.webp 480w, gorsel/tedavi-gulus-800.webp 800w" sizes="(min-width:900px) 340px, (min-width:600px) 50vw, 100vw" width="800" height="533" alt="Hekimin ekrandaki diş planını koltuktaki hastaya göstermesi" loading="lazy" decoding="async"><div class="metin"><h3>Gülüş tasarımı</h3><p>Diş biçimi, rengi ve diziliminin yüz oranlarıyla birlikte planlanması.</p></div></li>
+      <li><img src="gorsel/tedavi-beyazlatma-800.webp" srcset="gorsel/tedavi-beyazlatma-480.webp 480w, gorsel/tedavi-beyazlatma-800.webp 800w" sizes="(min-width:900px) 340px, (min-width:600px) 50vw, 100vw" width="800" height="533" alt="Beyaz dişleriyle gülümseyen bir kadının yakın görünümü" loading="lazy" decoding="async"><div class="metin"><h3>Diş beyazlatma</h3><p>Diş renginin hekim kontrolünde açılması.</p></div></li>
+      <li><img src="gorsel/tedavi-ortodonti-800.webp" srcset="gorsel/tedavi-ortodonti-480.webp 480w, gorsel/tedavi-ortodonti-800.webp 800w" sizes="(min-width:900px) 340px, (min-width:600px) 50vw, 100vw" width="800" height="533" alt="Şeffaf diş plağını tutarak gülümseyen kadın" loading="lazy" decoding="async"><div class="metin"><h3>Ortodonti ve şeffaf plak</h3><p>Çapraşık dişlerin tel ya da şeffaf plaklarla düzeltilmesi.</p></div></li>
+      <li><img src="gorsel/tedavi-cocuk-800.webp" srcset="gorsel/tedavi-cocuk-480.webp 480w, gorsel/tedavi-cocuk-800.webp 800w" sizes="(min-width:900px) 340px, (min-width:600px) 50vw, 100vw" width="800" height="533" alt="Mermer zemin üzerinde bambu diş fırçaları" loading="lazy" decoding="async"><div class="metin"><h3>Çocuk diş tedavisi</h3><p>Süt ve kalıcı dişlerin korunmasına yönelik muayene ve tedaviler.</p></div></li>
+      <li><img src="gorsel/tedavi-kanal-800.webp" srcset="gorsel/tedavi-kanal-480.webp 480w, gorsel/tedavi-kanal-800.webp 800w" sizes="(min-width:900px) 340px, (min-width:600px) 50vw, 100vw" width="800" height="533" alt="Hekimin tabletteki diş röntgenini hastaya göstermesi" loading="lazy" decoding="async"><div class="metin"><h3>Kanal tedavisi</h3><p>Zarar görmüş diş sinirinin temizlenerek dişin korunması.</p></div></li>
+      <li><img src="gorsel/tedavi-temizlik-800.webp" srcset="gorsel/tedavi-temizlik-480.webp 480w, gorsel/tedavi-temizlik-800.webp 800w" sizes="(min-width:900px) 340px, (min-width:600px) 50vw, 100vw" width="800" height="533" alt="Hekimin diş maketi ve fırçayla hastaya fırçalamayı anlatması" loading="lazy" decoding="async"><div class="metin"><h3>Diş taşı temizliği</h3><p>Diş yüzeyinde biriken taş ve plağın temizlenmesi.</p></div></li>
     </ul>
+  </div></section>
+  <section class="galeri"><div class="sar">
+    <ul class="serit">
+      <li><img src="gorsel/galeri-gorusme-800.webp" srcset="gorsel/galeri-gorusme-400.webp 400w, gorsel/galeri-gorusme-800.webp 800w" sizes="(min-width:900px) 260px, 70vw" width="800" height="600" alt="Muayene sırasında hekimle sohbet ederken gülen hasta" loading="lazy" decoding="async"></li>
+      <li><img src="gorsel/galeri-tablet-800.webp" srcset="gorsel/galeri-tablet-400.webp 400w, gorsel/galeri-tablet-800.webp 800w" sizes="(min-width:900px) 260px, 70vw" width="800" height="600" alt="Hekimlerin koltuktaki hastayla birlikte tablete bakması" loading="lazy" decoding="async"></li>
+      <li><img src="gorsel/galeri-oda-800.webp" srcset="gorsel/galeri-oda-400.webp 400w, gorsel/galeri-oda-800.webp 800w" sizes="(min-width:900px) 260px, 70vw" width="800" height="600" alt="Aydınlık ve modern bir tedavi odasında boş diş koltuğu" loading="lazy" decoding="async"></li>
+      <li><img src="gorsel/galeri-gulumseme-800.webp" srcset="gorsel/galeri-gulumseme-400.webp 400w, gorsel/galeri-gulumseme-800.webp 800w" sizes="(min-width:900px) 260px, 70vw" width="800" height="600" alt="Kıvırcık saçlı, kahkahayla gülen kadın" loading="lazy" decoding="async"></li>
+      <li><img src="gorsel/galeri-tokalasma-800.webp" srcset="gorsel/galeri-tokalasma-400.webp 400w, gorsel/galeri-tokalasma-800.webp 800w" sizes="(min-width:900px) 260px, 70vw" width="800" height="600" alt="Tedavi odasında hekimle hastanın tokalaşması" loading="lazy" decoding="async"></li>
+      <li><img src="gorsel/galeri-koltuk-800.webp" srcset="gorsel/galeri-koltuk-400.webp 400w, gorsel/galeri-koltuk-800.webp 800w" sizes="(min-width:900px) 260px, 70vw" width="800" height="600" alt="Beyaz duvarlı tedavi odasında siyah diş koltuğu ve ünit" loading="lazy" decoding="async"></li>
+    </ul>
+  </div></section>
+  <section class="eylem"><div class="sar">
+    <a class="cta" href="https://www.instagram.com/avenoradental/" target="_blank" rel="noopener">Instagram'da bizi takip edin</a>
   </div></section>
 </main>
 <footer><div class="sar">
   <p>Bu sayfa genel bilgilendirme amaçlıdır; tanı ve tedavi kararı muayene sonrasında hekim tarafından verilir.</p>
   <p><span class="son-guncelleme">Son güncelleme: 13.11.2026</span></p>
-  <p>Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora</p>
 </div></footer>
+<script>(function(){var v=document.querySelector('.ust-medya video');if(!v)return;var c=navigator.connection||{};if(matchMedia('(prefers-reduced-motion: reduce)').matches||c.saveData||/2g/.test(c.effectiveType||''))return;v.addEventListener('playing',function(){v.classList.add('oynuyor')});v.src=v.getAttribute('data-src');var p=v.play();if(p&&p.catch)p.catch(function(){});})();</script>
 </body>
 </html>
